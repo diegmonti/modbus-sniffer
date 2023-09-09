@@ -1,0 +1,11 @@
+[Unit]
+Description=PdC Prometheus Exporter
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/modbus-sniffer
+ExecStart=/home/pi/modbus-sniffer/start.sh
+
+[Install]
+WantedBy=multi-user.target
