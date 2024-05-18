@@ -6,6 +6,8 @@ Wants=network.target
 Type=simple
 WorkingDirectory=/home/pi/modbus-sniffer
 ExecStart=/home/pi/modbus-sniffer/start.sh
+RestartSec=5s
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
